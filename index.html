@@ -334,7 +334,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
       <ul>
         <li>Slavery, the destruction of Haudenosaunee towns, and battlefield violence are described plainly and without graphic detail.</li>
         <li>Loyalists, Native nations allied with Britain, and Black Loyalists are presented with their own reasons for choosing a side.</li>
-        <li>LGBTQ+ history: von Steuben and John Laurens are included with what the evidence shows and where historians disagree. The notes explain that people in the 1700s didn’t use today’s words for identity, and that relationships between men were illegal at the time.</li>
+        <li>Private lives: the von Steuben and John Laurens cards describe what the evidence shows about their personal relationships and where historians disagree, noting that people in the 1700s didn’t use today’s words for identity.</li>
       </ul>
       <h3>How this was checked</h3>
       <ul>
@@ -382,7 +382,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 
 <script>
 // Content for Road to Yorktown. Text markup: {term} or {term|shown text} links to the word bank.
-// people groups: w = women, b = Black history, n = Native nations, q = LGBTQ+ history, a = allies from abroad
+// people groups: w = women, b = Black history, n = Native nations, a = allies from abroad
 // people side: us = American/Patriot, gb = British/Loyalist, al = French ally
 const STOPS = [
 {
@@ -606,7 +606,7 @@ const STOPS = [
   tactic: { name: "Steuben’s training", text: "Steuben wrote drills in French, and aides translated them into English each night. He trained a “model company” of about 100 men himself, shouting in German and French, and those men then trained others. He taught soldiers to march in step, load faster, change formation quickly, and use the {bayonet}. He also made camps healthier by placing kitchens and toilets on opposite sides of camp. His drill manual, called the “Blue Book,” was used by the U.S. Army for decades." },
   why: "Training turned separate state regiments into one army that moved and fought the same way. News of the French alliance arrived in May 1778, and the camp celebrated. A month later, the army showed off its new skills at Monmouth.",
   people: [
-    { name: "Baron Friedrich Wilhelm von Steuben", g: ["a", "q"], side: "us", text: "A Prussian officer who arrived at Valley Forge in February 1778 and became the army’s Inspector General. Benjamin Franklin helped bring him to America and exaggerated his rank: Steuben had been a captain, not a general. Many historians believe Steuben was gay. Shortly before he came to America, rumors about relationships with young men cost him a post at a German court (some biographers think the rumors were a political attack). He never married, and in America he lived with two young aides, William North and Benjamin Walker, whom he treated as adopted sons and made his heirs. People in the 1700s didn’t use words like “gay,” and relationships between men were against the law, so historians piece together evidence from letters and from what people around him wrote. Not every historian reads the evidence the same way." },
+    { name: "Baron Friedrich Wilhelm von Steuben", g: ["a"], side: "us", text: "A Prussian officer who arrived at Valley Forge in February 1778 and became the army’s Inspector General. Benjamin Franklin helped bring him to America and exaggerated his rank: Steuben had been a captain, not a general. Many historians believe Steuben was gay. Shortly before he came to America, rumors about relationships with young men cost him a post at a German court (some biographers think the rumors were a political attack). He never married, and in America he lived with two young aides, William North and Benjamin Walker, whom he treated as adopted sons and made his heirs. People in the 1700s didn’t use words like “gay,” and relationships between men were against the law, so historians piece together evidence from letters and from what people around him wrote. Not every historian reads the evidence the same way." },
     { name: "Polly Cooper", g: ["n", "w"], side: "us", text: "According to Oneida tradition, she walked hundreds of miles with Oneida warriors in the spring of 1778, carrying hundreds of baskets of white corn to the hungry army, and taught soldiers how to prepare it. Few records from the time mention her, so her story comes mainly from Oneida and family tradition. The Oneida Nation remembers the gift as a sign of its alliance with the United States." },
     { name: "Martha Washington", g: ["w"], side: "us", text: "She spent this winter at camp, as she did most winters of the war. She organized women to mend clothes and visit sick soldiers." }
   ],
@@ -623,7 +623,7 @@ const STOPS = [
     { name: "Mary Ludwig Hays", g: ["w"], side: "us", text: "She carried water to soldiers on the scorching battlefield and helped load and fire a cannon. A soldier wrote that a cannonball passed between her legs and tore off the bottom of her petticoat. She is the woman most often linked to the legend of “Molly Pitcher,” which probably blends the stories of several women." },
     { name: "Black soldiers in Washington’s army", g: ["b"], side: "us", text: "After the battle, officers reported more than 700 Black soldiers serving in the brigades of Washington’s main army, most of them in integrated regiments." },
     { name: "Colonel Tye", g: ["b"], side: "gb", text: "Titus escaped slavery in Monmouth County in 1775, probably to join Lord Dunmore’s forces in Virginia. He fought for the British at Monmouth, where he captured a Patriot militia captain. He later led raids by Black and white Loyalists across New Jersey and earned the title “Colonel.” He died of a wound in 1780." },
-    { name: "Baron Friedrich Wilhelm von Steuben", g: ["a", "q"], side: "us", ref: true, text: "His training at Valley Forge paid off here, when troops re-formed their lines under fire." }
+    { name: "Baron Friedrich Wilhelm von Steuben", g: ["a"], side: "us", ref: true, text: "His training at Valley Forge paid off here, when troops re-formed their lines under fire." }
   ],
   q: ["What does Mary Hays’ story show about how legends grow?", "Colonel Tye and the Black soldiers in Washington’s army fought on opposite sides. What was each hoping to gain?"]
 },
@@ -740,7 +740,7 @@ const STOPS = [
   tactic: { name: "Siege with parallels", text: "Attackers dug long trenches, called parallels, facing the enemy walls, then zig-zag trenches forward to dig another one even closer. Each step brought the cannons nearer. The Americans and French would use the same method against the British at Yorktown." },
   why: "With Charleston and its army gone, the South seemed lost. Two weeks later, Tarleton’s cavalry crushed a Virginia regiment at the Waxhaws. Patriots said Tarleton’s men killed soldiers who were trying to surrender, and “Tarleton’s quarter” became a Patriot rallying cry.",
   people: [
-    { name: "John Laurens", g: ["q"], side: "us", text: "A South Carolina officer and aide to Washington who argued that the South should free enslaved men and let them fight for independence. South Carolina’s leaders rejected his plan twice. He was captured here at Charleston, was exchanged, and later helped storm Redoubt 10 at Yorktown. His letters with fellow aide Alexander Hamilton are full of loving language. Historians disagree about whether they show a romantic relationship or the intense friendships between men that were common in the 1700s. He was killed in a small skirmish in 1782." },
+    { name: "John Laurens", g: [], side: "us", text: "A South Carolina officer and aide to Washington who argued that the South should free enslaved men and let them fight for independence. South Carolina’s leaders rejected his plan twice. He was captured here at Charleston, was exchanged, and later helped storm Redoubt 10 at Yorktown. His letters with fellow aide Alexander Hamilton are full of loving language. Historians disagree about whether they show a romantic relationship or the intense friendships between men that were common in the 1700s. He was killed in a small skirmish in 1782." },
     { name: "Black Loyalists", g: ["b"], side: "gb", text: "Many people who escaped to the British worked as guides, builders, wagon drivers and soldiers. For them, the British side offered a real chance at freedom." }
   ],
   q: ["Why do you think South Carolina rejected John Laurens’s plan?", "If Britain promised freedom, why didn’t more enslaved people escape? What risks did they face?"]
@@ -814,7 +814,7 @@ const STOPS = [
     { name: "Sarah Osborn", g: ["w"], side: "us", text: "She traveled with the army with her husband, cooking and washing for soldiers. During the siege she carried food to men in the trenches while under fire. When Washington asked if she was afraid of the cannonballs, she said no: “It would not do for the men to fight and starve too.” She told this story in 1837, when she applied for a widow’s pension." },
     { name: "Deborah Sampson", g: ["w"], side: "us", text: "In the spring of 1782, months after Yorktown, she disguised herself as a man named Robert Shurtliff and enlisted in the 4th Massachusetts Regiment. Wounded in a skirmish in Westchester County, New York, she removed a musket ball from her own thigh to avoid being discovered. Her secret came out when she fell sick with a fever in 1783, and she was honorably discharged. She later received pensions from Massachusetts and the federal government." },
     { name: "Black Loyalists", g: ["b"], side: "gb", ref: true, text: "Thousands of people who had escaped slavery were inside Yorktown. As food ran out, many sick with smallpox were forced out of the British lines. In 1783, about 3,000 Black Loyalists sailed from New York with the British, their names recorded in a list now called the Book of Negroes, and many settled in Nova Scotia." },
-    { name: "Baron Friedrich Wilhelm von Steuben", g: ["a", "q"], side: "us", ref: true, text: "Commanded one of the American divisions during the siege." },
+    { name: "Baron Friedrich Wilhelm von Steuben", g: ["a"], side: "us", ref: true, text: "Commanded one of the American divisions during the siege." },
     { name: "Marquis de Lafayette", g: ["a"], side: "us", ref: true, text: "His small army kept Cornwallis pinned in Virginia until Washington and Rochambeau arrived." }
   ],
   know: "Legend says the British band played “The World Turned Upside Down” at the surrender. That story first appeared decades later.",
@@ -853,7 +853,6 @@ const GROUPS = {
   w: "Women",
   b: "Black history",
   n: "Native nations",
-  q: "LGBTQ+ history",
   a: "Allies from abroad"
 };
 
